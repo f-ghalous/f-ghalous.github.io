@@ -1,5 +1,5 @@
 body {
-    background-color: cadetblue;
+    background-color:bisque;
 }
 header {
     background-color:aquamarine;
@@ -22,4 +22,8 @@ header {
     letter-spacing: 2px;
     word-spacing: 2px;
     margin-bottom: 40;
+}
+img{
+    width: 1000px;
+    height: 300px; 
 }
