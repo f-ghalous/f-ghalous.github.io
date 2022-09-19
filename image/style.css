@@ -1,0 +1,25 @@
+body {
+    background-color: cadetblue;
+}
+header {
+    background-color:aquamarine;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.menu {
+    color:aqua;
+    font: size 30px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-bottom: 40;
+}
