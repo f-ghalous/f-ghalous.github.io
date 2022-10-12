@@ -1,0 +1,14 @@
+body{
+    background-color:cadetblue;
+}
+h1{
+    color:burlywood;
+    text-align: center;
+    text-transform:uppercase;
+}
+button{
+height: 1cm;
+width: 5cm;
+border-radius: 3px;
+background-color: bisque;
+}
