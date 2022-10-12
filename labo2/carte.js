@@ -33,5 +33,8 @@ var etat = function(){
         resultat1.innerHTML = carte;}
 
 buttonEtat.addEventListener("click",etat);
+
 let imgage= document.querySelectorAll("img");
-console.log('hello');
+for(i=0; i< image.length; i++){
+    imgage[i].src;
+}

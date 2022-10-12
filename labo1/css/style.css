@@ -1,0 +1,251 @@
+/* inspirer du site:https://moalibijoux.com/product/collier-en-argent-c112/*/
+
+body {
+    background-color: bisque;
+}
+.body_contact{
+  background-color:darkkhaki ;
+  text-align: center;
+}
+
+
+header {
+    background-color: #63855ba2;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+nav{
+  text-align: center;
+}
+
+.menu {
+    color:darkblue;
+    font: size 30px;
+    font-weight: bold;
+    text-decoration:underline;
+    padding: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 200px;
+    text-align: left;
+}
+.img_home{
+  width: 400px;
+  height: 400px;
+  margin-left: 8px;
+}
+ 
+
+ .img_article{
+  width: 200px;
+  height: 250px;
+  margin-left: 8px;
+  border-style: solid;
+  border-width: 5px;
+  border-color:black;
+
+ }
+td{
+ width: 200;
+ height: 200;}
+
+.contact{
+  
+  background-color: aliceblue;
+  width: 300px;
+  height: 400px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #437A16;
+  margin: auto;
+  padding-left: 20px
+  
+}
+ 
+.user{
+  background-color:white;
+  width: 300px;
+  height: 200px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blueviolet;
+  margin: auto;
+  padding-top: 30px;
+  padding-top: 40px;
+} 
+  
+label{
+  color:blue;
+  text-align: left;
+}
+.label_login{
+  color:blueviolet;
+  text-align: left;
+  font-weight: bold;
+  
+}
+input[type="submit"] {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color:red;
+  color:white;
+  font-weight: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  width:3cm;
+  height: 1cm;
+  cursor: pointer
+}
+
+input[type="text"] {
+  border-color: blue;
+  margin-top: 40px;
+  margin-left: 40px
+}
+input[type="tel"] {
+  border-color: blue;
+  margin-top: 40px;
+  margin-left: 40px
+}
+input[type="email"] {
+  border-color: blue; 
+  margin-top: 40px;
+  margin-left: 40px
+}
+input[type="password"] {
+  border-color: blue;
+  margin-left: 40px
+}
+input[type="button"] {
+  border-color:yellow;
+  background-color: beige;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 30px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 1cm;
+}
+
+h1{
+    text-align:left;
+    color:darkcyan
+}
+p {
+    text-align: left;
+    
+    }
+
+
+button{
+    border-radius: 2px;
+    border-bottom: green;
+    background-color:burlywood;
+    cursor: pointer;
+
+}
+.acheter{
+  border-radius: 5px;
+  border-bottom:black;
+  background-color:blue;
+  color:white;
+  width: 50%;
+  height: 2em;
+  cursor: pointer;
+  margin-left: 25%;
+  margin-right: 30%
+
+}
+span{
+    background-color: cyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th{
+  background-color:darkgreen;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  height: 2cm;
+}
+.th_contact{
+  background-color:darkcyan;
+  font-weight: bold;
+  text-align: center;
+  color:black
+}
+.connecter{
+  background-color: aliceblue;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blueviolet;
+  text-align: justify;
+  width: 400px;
+  font-size: 20px;
+  font-size: 15;
+  padding-top: 2px;
+  margin-top: 5px;
+  padding-left: 2px;
+}
+.articles{
+  background-color:cornflowerblue;
+  border-style: solid;
+  border-width: 5px;
+  border-color:darkblue;
+  text-align: justify;
+  width: 400px;
+  font-size: 20px;
+  font-size: 15;
+  padding-top: 2px;
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ a:link {
+    color: #265301;
+    text-decoration: underline;
+  }
+  
+  a:focus {
+    border-radius:  1px; 
+    background-color: antiquewhite;
+    color:aqua;
+    margin-top: 2cm;
+    width: 2cm;
+    height: 1cm;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    border-radius: 18px solid;
+    border-radius: blue;
+    width: 2cm;
+    height: 1cm;
+    color:#265301;
+    margin: top 2px;
+    cursor: pointer;
+
+  }
+  
+  .center {
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  footer{
+    background-color:#437A16;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    width: 30;
+  
+}
