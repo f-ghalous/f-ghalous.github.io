@@ -13,7 +13,6 @@ function generationCartes(){
         }    
     }
     return cartes}
-
 let button = document.getElementById("brassage");
 let carte = generationCartes();
 var brassage = function(){
@@ -27,28 +26,10 @@ var brassage = function(){
     resultat.innerHTML = nouveau_paquet;}
 
 button.addEventListener('click', brassage);
-
-//let buttonEtat = document.getElementById("etat");
-//buttonEtat.addEventListener('click', afficherCartes(carte));
-/*var etat = function(){
-    let resultat1 = document.getElementById("afficher");
-        resultat1.innerHTML = carte;}*/
-
-//buttonEtat.addEventListener("click",etat);
-
-
-let afficherCartes = function(){
-    //liste d'images ici 
-    let resultat = document.getElementById("demo");
-    resultat.innerHTML = "";
-    for (let i = 0; i < 4; i++){
-        //resultat.innerHTML += "<div>"
-        for (let j=0; j<13; j++){
-            c = carte[i+j]
-            resultat.innerHTML += c //"<img src="+carte[13*i+j]+"> </img>"  
-            //fait attention carte[] ne retourne pâs la source d'un image
-        }
-        resultat.innerHTML += "</div>";}}
-
 let buttonEtat = document.getElementById("etat");
-buttonEtat.addEventListener('click', afficherCartes);        
+
+var etat = function(){
+    let resultat1 = document.getElementById("afficher");
+        resultat1.innerHTML = carte;}
+
+buttonEtat.addEventListener("click",);
