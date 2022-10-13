@@ -1,14 +1,22 @@
-body{
-    background-color:cadetblue;
+body {
+    background-color: cadetblue;
 }
-h1{
-    color:burlywood;
+
+header {
+    background-color: #63855ba2;
     text-align: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
 }
-button{
-height: 1cm;
-width: 5cm;
-border-radius: 3px;
-background-color: bisque;
+
+button {
+    height: 1cm;
+    width: 5cm;
+    border-radius: 3px;
+    background-color: bisque;
+    border-color: blue;
 }
