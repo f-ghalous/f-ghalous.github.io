@@ -13,23 +13,21 @@ function generationCartes(){
         }    
     }
     return cartes}
+
 function  afficherCartes(carte){
-        //liste d'images ici 
     let resultat = document.getElementById("demo");
     resultat.innerHTML = "";
     for (let i = 0; i < 4; i++){
         resultat.innerHTML += "<div>"
         for (let j=0; j<13; j++){
-            c = carte[i+j]
-            resultat.innerHTML += c //"<img src="+carte[13*i+j]+"> </img>"  
-                //fait attention carte[] ne retourne pâs la source d'un image
+            c = carte[13*i+j]
+            resultat.innerHTML += c 
             }
         resultat.innerHTML += "</div>";}}
 
 let button = document.getElementById("brassage");
 let carte = generationCartes();
-//let affiche = document.getElementById("demo");
-//affiche.innerHTML = carte;
+
 var brassage = function(){
     let resultat = document.getElementById("demo");
     const moitie_deck = carte.length / 2;
@@ -38,26 +36,11 @@ var brassage = function(){
         nouveau_paquet.push(carte[i]);
         nouveau_paquet.push(carte[i+moitie_deck]); }   
     carte = nouveau_paquet;
-    afficherCartes(carte); } 
-   // resultat.innerHTML = carte;}
+    afficherCartes(carte);}  
     
 button.addEventListener('click', brassage);
 
-/*function  afficherCartes(carte){
-    //liste d'images ici 
-    let resultat = document.getElementById("demo");
-    resultat.innerHTML = "";
-    for (let i = 0; i < 4; i++){
-        resultat.innerHTML += "<div>"
-        for (let j=0; j<13; j++){
-            c = carte[i+j]
-            resultat.innerHTML += c //"<img src="+carte[13*i+j]+"> </img>"  
-            //fait attention carte[] ne retourne pâs la source d'un image
-        }
-        resultat.innerHTML += "</div>";}}*/
-
 let carte1 = generationCartes();
+console.log(carte1);
 afficherCartes(carte1);       
-/*let buttonEtat = document.getElementById("etat");
-buttonEtat.addEventListener('click', afficherCartes);   */   
 
