@@ -36,5 +36,5 @@ buttonEtat.addEventListener("click",etat);
 
 let imgage= document.querySelectorAll("img");
 for(i=0; i< image.length; i++){
-    imgage[i].src;
+    imgage[i].src = "labo2\image\5carreau.png";
 }
