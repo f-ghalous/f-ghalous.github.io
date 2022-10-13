@@ -35,7 +35,7 @@ function  afficherCartes(carte){
     let resultat = document.getElementById("demo");
     resultat.innerHTML = "";
     for (let i = 0; i < 4; i++){
-        //resultat.innerHTML += "<div>"
+        resultat.innerHTML += "<div>"
         for (let j=0; j<13; j++){
             c = carte[i+j]
             resultat.innerHTML += c //"<img src="+carte[13*i+j]+"> </img>"  
@@ -46,4 +46,5 @@ function  afficherCartes(carte){
 let carte1 = generationCartes();
 afficherCartes(carte1);       
 /*let buttonEtat = document.getElementById("etat");
-buttonEtat.addEventListener('click', afficherCartes);   */     
+buttonEtat.addEventListener('click', afficherCartes);   */   
+
