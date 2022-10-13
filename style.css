@@ -13,20 +13,22 @@ header {
 }
 
 .menu {
-    color:aqua;
+    color:blue;
     font: size 30px;
     font-weight: bold;
     text-decoration: none;
     padding: 2px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    word-spacing: 2px;
-    margin-bottom: 40;
+    word-spacing: 3px;
+    margin-top: 2cm;
+    margin-bottom: 1cm;
 }
 .center {
         margin-left: 25%;
         width: 20cm;
         height: 10cm;
+        margin-top: 4cm;
         
       }
       
