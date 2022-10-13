@@ -6,7 +6,7 @@ function generationCartes(){
         VALEURS.push(i);
     }
     VALEURS.push.apply(VALEURS, myArray2);
-    const cartes = [];
+    const cartes = [];0
     for(var i=0; i< COULEURS.length; i++){
         for(var n=0; n < VALEURS.length; n++){
             cartes.push(COULEURS[i]+VALEURS[n]);
@@ -14,21 +14,10 @@ function generationCartes(){
     }
     return cartes}
 
-function afficherCartes(carte){
-    //liste d'images ici 
-    let resultat = document.getElementById("demo");
-    resultat.innerHTML = "";
-    for (let i = 0; i < 4; i++){
-        resultat.innerHTML += "<div>"
-        for (let j=0; j<13; j++){
-            resultat.innerHTML += "<img src="+carte[13*i+j]+"> </img>"  
-            //fait attention carte[] ne retourne pâs la source d'un image
-        }
-        resultat.innerHTML += "</div>"
-    }
-}
 let button = document.getElementById("brassage");
 let carte = generationCartes();
+let affiche = document.getElementById("demo");
+affiche.innerHTML = carte;
 var brassage = function(){
     let resultat = document.getElementById("demo");
     const moitie_deck = carte.length / 2;
@@ -37,9 +26,8 @@ var brassage = function(){
         nouveau_paquet.push(carte[i]);
         nouveau_paquet.push(carte[i+moitie_deck]); }   
     carte = nouveau_paquet;
-    //resultat.innerHTML = nouveau_paquet;}
+    resultat.innerHTML = nouveau_paquet;}
     
-
 button.addEventListener('click', brassage);
 
 //let buttonEtat = document.getElementById("etat");
@@ -51,7 +39,7 @@ button.addEventListener('click', brassage);
 //buttonEtat.addEventListener("click",etat);
 
 
-let afficherCartes = function(){
+function  afficherCartes(carte){
     //liste d'images ici 
     let resultat = document.getElementById("demo");
     resultat.innerHTML = "";
@@ -64,5 +52,7 @@ let afficherCartes = function(){
         }
         resultat.innerHTML += "</div>";}}
 
-let buttonEtat = document.getElementById("etat");
-buttonEtat.addEventListener('click', afficherCartes);        
+let carte1 = generationCartes();
+afficherCartes(carte1);       
+/*let buttonEtat = document.getElementById("etat");
+buttonEtat.addEventListener('click', afficherCartes);   */     
