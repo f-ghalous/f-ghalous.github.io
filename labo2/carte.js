@@ -16,8 +16,8 @@ function generationCartes(){
 
 let button = document.getElementById("brassage");
 let carte = generationCartes();
-let affiche = document.getElementById("demo");
-affiche.innerHTML = carte;
+//let affiche = document.getElementById("demo");
+//affiche.innerHTML = carte;
 var brassage = function(){
     let resultat = document.getElementById("demo");
     const moitie_deck = carte.length / 2;
@@ -29,15 +29,6 @@ var brassage = function(){
     resultat.innerHTML = nouveau_paquet;}
     
 button.addEventListener('click', brassage);
-
-//let buttonEtat = document.getElementById("etat");
-//buttonEtat.addEventListener('click', afficherCartes(carte));
-/*var etat = function(){
-    let resultat1 = document.getElementById("afficher");
-        resultat1.innerHTML = carte;}*/
-
-//buttonEtat.addEventListener("click",etat);
-
 
 function  afficherCartes(carte){
     //liste d'images ici 
