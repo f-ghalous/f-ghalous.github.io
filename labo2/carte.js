@@ -63,13 +63,13 @@ let button = document.getElementById("brassage");
     afficherCartes(carte);}  */
 
 var brassage = function(){
-    let resultat = document.getElementById("demo");
+   // let resultat = document.getElementById("demo");
     const moitie_deck = images.length / 2;
     const nouveau_paquet = [];
     for (var i = 0; i < moitie_deck; i++){
-        nouveau_paquet.push(carte[i]);
-        nouveau_paquet.push(carte[i+moitie_deck]); }   
-        carte = nouveau_paquet;
+        nouveau_paquet.push(images[i]);
+        nouveau_paquet.push(images[i+moitie_deck]); }   
+        let carte = nouveau_paquet;
         afficherCartes(carte);}  
 
 
