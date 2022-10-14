@@ -10,7 +10,8 @@ var images = ["image/1.gif", "image/2.gif","image/3.gif",
 "image/36.gif","image/37.gif","image/38.gif","image/39.gif",
 "image/40.gif","image/41.gif","image/42.gif","image/43.gif",
 "image/44.gif","image/45.gif","image/46.gif","image/47.gif",
-"image/48.gif","image/49.gif","image/50.gif", "image/51.gif", "image/52.gif"];
+"image/48.gif","image/49.gif","image/50.gif", "image/51.gif",
+ "image/52.gif"];
 
 function  afficherCartes(){
     let resultat = document.getElementById("demo");
