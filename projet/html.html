@@ -17,9 +17,11 @@
       
   </head>
   <body style=" background-color:powderblue;padding: 40px; ">
-    <center><h1 style="color:#8ebf42;" >My first page web </h1></center>
-    <center><img src="https://www.w3docs.com/uploads/media/default/0001/05/805cddb75d8fdc035886bc8d78487eef8b3845bb.png";   title="Bienvenue chez fairouz" width="800"
-    height="300" ></center>
+    <h1 style="color:#8ebf42; text-align: center;" >My first page web </h1>
+    <div >
+    <img src="https://www.w3docs.com/uploads/media/default/0001/05/805cddb75d8fdc035886bc8d78487eef8b3845bb.png"  title="Bienvenue chez fairouz" width="800"
+    height="300" >
+   </div>
     <nav>
       <h1>Liste des liens</h1>
       <p><a href="html.html" title ="HTML">HTML</a></p>
@@ -30,7 +32,7 @@
     
     <p><strong>&lt; p &gt;</strong> : Contient un paragraphe. Exemple:Je suis un paragraphe</p>
     <p><strong>&lt; b &gt;</strong> : Transforme le texte en caractères gras. Exemple: <b>Texte gras.</b></p>
-    <p><strong>&lt; a href= "lien" &lt;/ a &gt;</strong> : cet attribut spécifie l'adresse web vers le lien pointer Exemple: <a href="https://www.google.ca">google</a></p>
+    <p><strong>&lt; a href= "lien" &lt;/ a &gt;</strong> : cet attribut spécifie l'adresse web vers le lien pointer Exemple: <a style="color: red ;" href="https://www.google.ca">google</a></p>
     <p><strong>&lt; h1 &gt;</strong>: h1 niveau d'écriture du titre principal. Exemple: <h1>Titre principal</h1></p>
     <p><strong>&lt; h2 &gt;</strong>: h2 niveau d'écriture du sous-titre. Exemple:<h2>sous-titre</h2></p>
     <p><strong>&lt; h3 &gt;</strong> : niveau d'écriture du sous-sous- titre. Exemple: <h3>sous-sous-titre</h3></p>
@@ -71,7 +73,7 @@
         <td>Je suis une deuxieme cellule</td></table>
       
     <p>&lt; tr &gt; pour avoir une ligne. Exemple:</p>
-    <p><strong>&lt; div &gt;</strong> : est un élément de niveau bloc. Exemple: <div lang=""en-GB""> Le rouge est une couleur vive. C’est la couleur de nombreux 
+    <p><strong>&lt; div &gt;</strong> : est un élément de niveau bloc. Exemple: <div lang="en-GB"> Le rouge est une couleur vive. C’est la couleur de nombreux 
       fruits et légumes, comme les tomates, les fraises ou les cerises.</div>
       <div>Le rouge est une couleur vive. C’est la couleur de nombreux fruits et légumes, comme les tomates, les fraises ou les cerises.</div>
       <p><strong>&lt; span &lg; spécifie des lignes. Exemple:  Le rouge <span style="color: red">est une couleur vive</span>. C’est la couleur de nombreux fruits et légumes
@@ -100,8 +102,8 @@
           <input type="text" name="nom" id="nameinput">
         </fieldset>
       </form>
-      <center><h2 style="color:blueviolet">Tableau</h1></center>
-      <center><table>
+      <h2 style="color:blueviolet; text-align: center;">Tableau</h1>
+      <table >
         <tr>
           <td style="background-color:burlywood;" >
           <button type="button" style=" background-color:chartreuse; border-radius: 80px; color:#8ebf42; width: 8cm; height:2cm  "> HTML BOUTTON </button>
@@ -110,14 +112,16 @@
             <fieldset><legende>Choose your favorite color:</legende>
       
             <div>
-              <input style=" padding:20px" type="checkbox" id="scales" name="Rouge"
+              <input style=" padding:20px" type="checkbox" id="scales"
                    checked>
               <label for="scales">Rouge</label>
             </div>
       
             <div>
-              <input type="checkbox" id="horns" name="blanc" checked>
+              <input type="checkbox" id="horns" checked>
               <label for="horns">blanc </label>
+              <br>
+              <button style="border-radius: 5px; background-color: red; width: 4cm;height: 1cm; margin-left: 25%; color:#fff" onclick="alert('Ma couleur préfere est le rouge') "type="button"> checked</button>
             </div>
             </fieldset>
           </td>
@@ -159,32 +163,34 @@
           <form action="/action_page.php">
             <label for="vol" style="color:aliceblue">Volume (between 0 and 50):</label>
             <input type="range" id="vol" name="vol" min="0" max="50">
-            <input type="submit">
+            <input type="submit" value="Envoyer">
           </form>
         </td>
           
         <td style="background-image:url(https://images3.alphacoders.com/503/thumbbig-50307.webp)">
-          <b>Click the button to see the current date.</b>
-          <button onclick="getElementById('demo').innerHTML=Date()"> What day is today?</button>
-          <p id="demo"></p>
+          <form >
+            <textarea> Send your comments to the author.</textarea>
+            <br>
+            <input  type="submit"  value="Envoyer" onclick="alert('votre commentaire a été Envoyer')">
+          </form>
         </td>
         
           
         <tr>
-          <td style="background-image:url(https://images7.alphacoders.com/493/thumbbig-493700.webp)">
-            <center><button style="background-color: brown; border: #8ebf42; width:4cm; height:2cm" onclick="window.location.href='lion.html';">
-              Click to see a beautiful animals </button></center>
+          <td style="background-color:bisque">
+            <button style="background-color: brown; border: #8ebf42; width:4cm; height:2cm; margin-left:25%"; onclick="window.location.href='lion.html';">
+              Click to see a beautiful animals </button>
           </td>
           
           <td style="background-color:cornflowerblue">
             <div>
               <label for="username">Username:</label>
-              <input type="text" id="username" name="username">
+              <input type="text" id="username" placeholder="username">
             </div>
       
             <div>
               <label for="pass">Password (8 characters minimum):</label>
-              <input type="password" id="pass" name="password"
+              <input type="password" id="pass"
                  minlength ="8" required>
             </div></td>
           <td style="background-image:url(https://images.alphacoders.com/526/thumbbig-526058.webp); width: 6cm; height:4cm ; "><p style="color:chartreuse">The option element</p>
@@ -200,24 +206,7 @@
         
         </tr>
     
-      </table></center>
-      
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      </table>
   
-    
   </body>
 </html>
