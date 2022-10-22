@@ -1,7 +1,28 @@
+.bodyindex{
+  background-color:cadetblue;
+}
 body {
   background-color: bisque;
 }
-
+header {
+  background-color: #63855ba2;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;}
+.menu {
+  color:darkred;
+  font: size 30px;
+  font-weight: bold;
+  text-decoration:underline;
+  padding: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 200px;
+  text-align: left;
+}
 
 .title {
   color: cornflowerblue;
@@ -135,4 +156,22 @@ label{
   margin-left: 25%;
   height: 1cm;
   width: 50%;
+}
+.center {
+  margin-left: 25%;
+  width: 20cm;
+  height: 10cm;
+  margin-top: 4cm;
+  
+}
+footer{
+  background-color:#437A16;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  width: 30;
+
 }
