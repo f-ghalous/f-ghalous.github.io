@@ -5,17 +5,22 @@
     <title>Note de cours</title>
   </head>
   <body>
+    <header>Page CSS</header>
     <nav>
-        <a href="Enconstruction.html">Enconstruction.htm</a>
-       
+      <nav>
+        <a href="index.html" class="menu">home</a>
+        <a href="html.html" class="menu">HTML</a>
+        <a href="Javascript.html" class="menu">Javascript</a>
+        <a href="WEBAPI.html" class="menu">WEBAPI</a>
+    </nav>
     </nav>
     <h1 class="title"> Le tableau du CSS</h1>
     <table>
-      <td class="degrader">
-        <button onclick="alert('Hello I am Fairouz!')">Click Me!</button>
+      <td id ="degrader">
+        <button onclick="alert('Hello I am Fairouz!')">Click to Me!</button>
  
       </td>
-      <td class="photo">
+      <td id ="photo">
         <p>Fill the below form,</p>
         <form>
            <label for = "subject">Subject</label>
@@ -26,7 +31,7 @@
         </form>
       </td>
       <td>
-        <div class ="langage" >
+        <div id ="langage" >
           <form  >
             <p>I can speak different languages:</p>
             <input type="checkbox" id="english" value="Bike">
@@ -61,13 +66,13 @@
            <input type="password" id="pass" minlength ="8" required>
          </div></td>
         <td class="selecte"> 
-          <label for="pays">Choose a your favorite country:</label>
+          <label for="pays">Choose your favorite countries:</label>
           <select id="pays">
             <option value="Algeria">Algeria</option>
             <option value="Canada">Canada</option>
             <option value="USA">USA</option>
             <option value="Germany">Germany</option>
-          </select></td></td>
+          </select></td>
       </tr>
       <td>
         <form >
@@ -78,17 +83,16 @@
       </td>
       <td class="arriere_animal">
         <button class="animal" onclick="window.location.href='lion.html';">
-          Click to see a beautiful animals </button></td>
+          Click to see a beautiful animal </button></td>
       <td style="background-image:url(https://images3.alphacoders.com/277/thumbbig-277275.webp)"> 
         <form >
           <label for="vol" style="color:aliceblue">Volume (between 0 and 50):</label>
           <input type="range" id="vol"  min="0" max="50">
-          <input type="submit" value="augmenter"  onclick="alert('Ma musique préfere est la musique classique')">
+          <input class="comment_submit" type="submit" value="augmenter"  onclick="alert('Ma musique préfere est la musique classique')">
         </form>
       </td>
       </tr>
 
     </table>
-    
   </body>
 </html>
