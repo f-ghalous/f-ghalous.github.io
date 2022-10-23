@@ -92,35 +92,64 @@
     <p>rowspan = "n": pour mettre une cellule sur n lignes. Exemple:
     <table><tr><td rowspan = "3" > cellule</td><tr><td>celleule2</td></tr></table>
     <h2 style = "color:blueviolet"> Les formulaires </h2>
-    <p style="color:brown">type email</p>
-    <p><strong>&lt;form  &gt;</strong></p>
-      <p><strong>&lt;input type="email"  placeholder="Enter your email" &gt;</strong>
-        <p><strong>&lt; type="submit" value="Submit" &gt;</strong></p>
-      <p><strong>&lt;/form  &gt;</strong>Exemple:</p>
-    <form >
+    <ul>
+      <li><p style="color:brown">type email</p>
+         <p><strong>&lt;form  &gt;</strong></p>
+         <p><strong>&lt;input type="email"  placeholder="Enter your email" &gt;</strong>
+         <p><strong>&lt; type="submit" value="Submit" &gt;</strong></p>
+         <p><strong>&lt;/form  &gt;</strong>Exemple:</p>
+      <form >
       <input type="email" placeholder="Enter your email" />
       <input type="submit" value="Submit" />
-    </form>
-    
-    <p style="color:brown">stype radio</p>
-    <p><strong>&lt;form &gt;</strong></p>
-    <p><strong>&lt;input type="radio" id="html" name="fav_language" value="HTML" &gt;</strong>
-      &lt;</strong>label for="html" &gt;</strong>HTML&lt;</strong>/label&gt;</strong><br>
-      <p><strong>&lt;/form  &gt;</strong>Exemple:</p>
-    <form>
+      </form>
+    </li>
+    <li>
+      <p style="color:brown">form radio</p>
+      <p><strong>&lt;form &gt;</strong></p>
+      <p><strong>&lt;input type="radio" id="html" value ="HTML" &gt;</strong>
+      &lt;</strong>label for ="html" &gt;</strong>HTML&lt;</strong>/label&gt;</strong>
+      <p><strong>&lt;/form &gt;</strong>Exemple:</p>
+      <form>
         <input type="radio" id="html"  value="HTML">
         <label for="html">HTML</label><br>
       </form>
-      <p style="color:brown">stype "checkbox"</p> 
+    </li>
+    <li>
+      <p style="color:brown">form "checkbox"</p> 
       <p><strong>&lt;form &gt;</strong></p>
       <p><strong>&lt;input type="checkbox" id="vehicle1"&gt;</strong>
         &lt;</strong>label for="vehicule1" &gt;</strong>I speack spanish&lt;</strong>/label&gt;</strong><br>
-        <p><strong>&lt;/form &gt;</strong></p>
+      <p><strong>&lt;/form &gt;</strong></p>
       <form>
         <input type="checkbox" id="vehicle1" value="Bike">
-        <label for="vehicle1"> I speak spanish</label><br>
+        <label for="vehicle1"> I speak spanish</label>
       </form>
-      <h2 style="color:blueviolet; text-align: center;">Tableau</h1>
+    </li>
+    <li>
+      <p style="color:brown">form "submit"</p> 
+      <p><strong>&lt;form &gt;</strong></p>
+      <p><strong>&lt;label for="fname"<strong>&gt;First name:<strong>&lt;/label &gt;<strong>
+        <p><strong>&lt; type="text" id="fname" value="John"  </strong>&gt;<strong></p> 
+        <p><strong>&lt;label for="lname"&gt;</strong>Last name:<strong>&lt;/label&gt;</strong>
+        <p><strong>&lt;input type="text" id="lname" value="Doe" <strong>&gt;</strong></p>
+        <p><strong>&lt; type="text" id="lname" value="John"<strong>&gt;</strong></p>
+        <p><strong>&lt; input type="submit" value="Submit"<strong>&gt;</strong></p> 
+      <p><strong>&lt;/form &gt;</strong></p>
+      <form >
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </li>
+    <li>
+      <p style="color:brown">form "button"</p> 
+      <p><strong>&lt;button type="button"<strong>&gt;;Click<strong>&lt;/button<strong>&gt; Exemple:</p>
+      <button type="button">Click</button>
+    </li>
+    </ul>
+      <h2 style="color:blueviolet; text-align:left;">Tableau</h1>
       <table >
         <tr>
           <td style="background-color:burlywood;" >
