@@ -4,12 +4,17 @@ async function get(){
     const data = await response.json();
     console.log(data);
    
-    document.querySelector("#content1 h1").innerHTML = data[0].name;
-    document.querySelector("#content1 h2").innerHTML = data[0].birthday;
-    document.querySelector("#content1 img").src = data[0].img;
-    document.querySelector("#content2 h1").innerHTML = data[1].name;
-    document.querySelector("#content2 h2").innerHTML = data[1].birthday;
-    document.querySelector("#content2 img").src = data[1].img;
-
+    document.querySelector("#content1 h1").innerHTML = data[1].name;
+    document.querySelector("#content1 h2").innerHTML = data[1].occupation;
+    document.querySelector("#content1 img").src = data[1].img;
+    document.querySelector("#content2 h1").innerHTML = data[4].name;
+    document.querySelector("#content2 h2").innerHTML = data[4].occupation;
+    document.querySelector("#content2 img").src = data[4].img;
+    document.querySelector("#content3 h1").innerHTML = data[21].name;
+    document.querySelector("#content3 h2").innerHTML = data[21].occupation;
+    document.querySelector("#content3 img").src = data[21].img;
+    document.querySelector("#content4 h1").innerHTML = data[5].name;
+    document.querySelector("#content4 h2").innerHTML = data[5].occupation;
+    document.querySelector("#content4 img").src = data[5].img;
     }
 get();
