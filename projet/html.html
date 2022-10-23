@@ -92,15 +92,33 @@
     <p>rowspan = "n": pour mettre une cellule sur n lignes. Exemple:
     <table><tr><td rowspan = "3" > cellule</td><tr><td>celleule2</td></tr></table>
     <h2 style = "color:blueviolet"> Les formulaires </h2>
-    <h1>Nous contacter</h1>
-      <form >
-        <fieldset>
-          <legend>nous contacter</legend>
-          <label for="emailinput">votre email</label>
-          <input type="text" id = "emailinput">
-          <label for="maneinput"> votre nom</label>
-          <input type="text" id="nameinput">
-        </fieldset>
+    <p style="color:brown">type email</p>
+    <p><strong>&lt;form  &gt;</strong></p>
+      <p><strong>&lt;input type="email"  placeholder="Enter your email" &gt;</strong>
+        <p><strong>&lt; type="submit" value="Submit" &gt;</strong></p>
+      <p><strong>&lt;/form  &gt;</strong>Exemple:</p>
+    <form >
+      <input type="email" placeholder="Enter your email" />
+      <input type="submit" value="Submit" />
+    </form>
+    
+    <p style="color:brown">stype radio</p>
+    <p><strong>&lt;form &gt;</strong></p>
+    <p><strong>&lt;input type="radio" id="html" name="fav_language" value="HTML" &gt;</strong>
+      &lt;</strong>label for="html" &gt;</strong>HTML&lt;</strong>/label&gt;</strong><br>
+      <p><strong>&lt;/form  &gt;</strong>Exemple:</p>
+    <form>
+        <input type="radio" id="html"  value="HTML">
+        <label for="html">HTML</label><br>
+      </form>
+      <p style="color:brown">stype "checkbox"</p> 
+      <p><strong>&lt;form &gt;</strong></p>
+      <p><strong>&lt;input type="checkbox" id="vehicle1"&gt;</strong>
+        &lt;</strong>label for="vehicule1" &gt;</strong>I speack spanish&lt;</strong>/label&gt;</strong><br>
+        <p><strong>&lt;/form &gt;</strong></p>
+      <form>
+        <input type="checkbox" id="vehicle1" value="Bike">
+        <label for="vehicle1"> I speak spanish</label><br>
       </form>
       <h2 style="color:blueviolet; text-align: center;">Tableau</h1>
       <table >
