@@ -2,8 +2,6 @@ const api = "https://www.breakingbadapi.com/api/characters"
 async function get(){
     const response = await fetch(api);
     const data = await response.json();
-    console.log(data);
-   
     document.querySelector("#content1 h1").innerHTML = data[1].name;
     document.querySelector("#content1 h2").innerHTML = data[1].occupation;
     document.querySelector("#content1 img").src = data[1].img;
@@ -17,4 +15,5 @@ async function get(){
     document.querySelector("#content4 h2").innerHTML = data[5].occupation;
     document.querySelector("#content4 img").src = data[5].img;
 }
+
 get();
