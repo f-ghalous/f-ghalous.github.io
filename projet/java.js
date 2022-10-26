@@ -7,12 +7,17 @@ function calculeImc(){
     const imc = (poids/ ((taille * taille)/10000)).toFixed(2);
     if(imc < 18.5){
         resultat.innerHTML = "Maigreur:" +" "+ imc;}
-    else if(imc > 18.5 && imc <= 25)
+    else if(imc >= 18.5 && imc < 25)
     {resultat.innerHTML = "Normal:" +" "+ imc; }
-    else if(imc > 25 && imc <= 30){
+    else if(imc >= 25 && imc < 30){
             resultat.innerHTML = "En surpoids" +" "+ imc;}  
-              else{
-        resultat.innerHTML = "Obésité:" +" "+ imc;}
+              else if(imc >= 30 && imc < 35){
+                resultat.innerHTML = "Obésité modérè:" +" "+ imc;}
+                else if(imc >= 35 && imc < 40)
+                { resultat.innerHTML = "Obésité sévère:" +" "+ imc;}
+                     else{
+                        resultat.innerHTML = "Obésité morbide:" +" "+ imc;
+                     }
    
     };
  
